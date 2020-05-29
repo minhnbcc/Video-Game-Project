@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Exchange.WebServices.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace VideoGamesProject
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             Thread t = new Thread(new ThreadStart(startScreenSplash));
@@ -21,29 +23,30 @@ namespace VideoGamesProject
             Thread.Sleep(7000);
             InitializeComponent();
             t.Abort();
-
+          
 
         }
 
+               
         public void startScreenSplash()
         {
             Application.Run(new Splash());
         }
 
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
             {
-
+                
                 if (ValidateChildren(ValidationConstraints.Enabled))
                 {
 
                     string sql = $"Select Count(*) from Login where EmployeeId = '{Convert.ToInt32(txtUserId.Text)}' and Password = '{txtPassword.Text}'";
                     if (Convert.ToInt32(DataAccess.GetValue(sql)) == 1)
                     {
+                        Properties.Settings.Default.EmployeeId = Convert.ToInt32(txtUserId.Text);
                         this.Hide();
-                        new MainForm().Show();
+                        new mdiForm().Show();
                     }
                     else
                     {
@@ -83,7 +86,7 @@ namespace VideoGamesProject
         {
             epUserId.Clear();
             epUserId.SetError(txtUserId, "");
-            if(txtUserId.Text == string.Empty)
+            if (txtUserId.Text == string.Empty)
             {
                 epUserId.Icon = Properties.Resources.errorIcon;
                 epUserId.RightToLeft = true;
@@ -114,23 +117,23 @@ namespace VideoGamesProject
         {
             epPassword.Clear();
             epPassword.SetError(txtPassword, null);
-            if (txtPassword.Text == string.Empty )
+            if (txtPassword.Text == string.Empty)
             {
                 epPassword.Icon = Properties.Resources.errorIcon;
                 epPassword.RightToLeft = true;
                 epPassword.BlinkStyle = ErrorBlinkStyle.BlinkIfDifferentError;
                 epPassword.SetError(txtPassword, "Password is required");
                 e.Cancel = true;
-                
+
             }
-            else if(txtPassword.Text.Length < 8 || txtPassword.Text.Length > 15)
-            {
-                epPassword.Icon = Properties.Resources.errorIcon;
-                epPassword.RightToLeft = true;
-                epPassword.BlinkStyle = ErrorBlinkStyle.BlinkIfDifferentError;
-                epPassword.SetError(txtPassword, "Password must contain from 8 to 15 characters long");
-                e.Cancel = true;
-            }
+            //else if (txtPassword.Text.Length < 8 || txtPassword.Text.Length > 15)
+            //{
+            //    epPassword.Icon = Properties.Resources.errorIcon;
+            //    epPassword.RightToLeft = true;
+            //    epPassword.BlinkStyle = ErrorBlinkStyle.BlinkIfDifferentError;
+            //    epPassword.SetError(txtPassword, "Password must contain from 8 to 15 characters long");
+            //    e.Cancel = true;
+            //}
             else
             {
 
