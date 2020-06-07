@@ -71,7 +71,7 @@ namespace VideoGamesProject
             return rowsAffected;
         }
 
-        public static object GetValue(string sql)
+        public static object ExecuteScalar(string sql)
         {
             object retValue;
 
@@ -87,13 +87,20 @@ namespace VideoGamesProject
         }
 
         /// <summary>
-        /// Clean our sql statements
+        /// Clean double spaces in sql statement
         /// </summary>
-        /// <param name="sqlStatement"></param>
+        /// <param name="sql"></param>
         /// <returns></returns>
-        private static string SQLCleaner(string sqlStatement)
+        public static string SQLCleaner(string sql)
         {
-            return sqlStatement.Replace(Environment.NewLine, "");
+            while (sql.Contains("  "))
+                sql = sql.Replace("  ", " ");
+            return sql.Replace(Environment.NewLine, "");
+        }
+
+        public static string SQLFix(string str)
+        {
+            return str.Replace("'", "''");
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,7 @@ namespace VideoGamesProject
             {
                 Form childForm = null;
                 ToolStripMenuItem m = (ToolStripMenuItem)sender;
+               
 
                 switch (m.Tag)
                 {
@@ -35,8 +37,11 @@ namespace VideoGamesProject
                         childForm = new frmModifyOrders();
                         break;
                     case "Games":
-                        childForm = new frmSearchGame();
+                        childForm = new frmGamesMaintenance();
                         break;
+                    //case "ModifyOrders":
+                    //    childForm = new frmModifyOrders();
+                    //    break;
 
                 }
 
@@ -100,15 +105,15 @@ namespace VideoGamesProject
         {
         }
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
+        //private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    toolStrip.Visible = toolBarToolStripMenuItem.Checked;
+        //}
 
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
+        //private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    statusStrip.Visible = statusBarToolStripMenuItem.Checked;
+        //}
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -141,6 +146,12 @@ namespace VideoGamesProject
         private void mdiForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             System.Diagnostics.Process.GetCurrentProcess().Kill();
+        }
+
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            frmOrders newOrder = new frmOrders();
+            newOrder.Show();
         }
     }
 }

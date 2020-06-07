@@ -36,6 +36,14 @@ D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProje
 D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
 D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.csproj.CopyComplete
 D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmModifyOrders.resources
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmGamesMaintenance.resources
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\bin\Debug\VideoGamesProject.exe.manifest
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\bin\Debug\VideoGamesProject.application
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.TrustInfo.xml
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.exe.manifest
+D:\Spring 2020\DBP\Assignment(Dropbox)\Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.application
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\VideoGamesProject.exe.manifest
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\VideoGamesProject.application
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\Microsoft.Exchange.WebServices.Auth.dll
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\Microsoft.Exchange.WebServices.dll
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\Microsoft.Exchange.WebServices.pdb
@@ -44,6 +52,9 @@ D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\Vid
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmOrders.resources
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmModifyOrders.resources
-D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmSearchGame.resources
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.frmGamesMaintenance.resources
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.mdiForm.resources
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.TrustInfo.xml
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.exe.manifest
+D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.application
 D:\Spring 2020\DBP\Assignment(Dropbox)\Video-Games-Project\VideoGamesProject\VideoGamesProject\obj\Debug\VideoGamesProject.csproj.CopyComplete

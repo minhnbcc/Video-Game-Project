@@ -42,7 +42,7 @@ namespace VideoGamesProject
                 {
 
                     string sql = $"Select Count(*) from Login where EmployeeId = '{Convert.ToInt32(txtUserId.Text)}' and Password = '{txtPassword.Text}'";
-                    if (Convert.ToInt32(DataAccess.GetValue(sql)) == 1)
+                    if (Convert.ToInt32(DataAccess.ExecuteScalar(sql)) == 1)
                     {
                         Properties.Settings.Default.EmployeeId = Convert.ToInt32(txtUserId.Text);
                         this.Hide();

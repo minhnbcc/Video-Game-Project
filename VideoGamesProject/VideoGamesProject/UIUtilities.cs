@@ -12,7 +12,7 @@ namespace VideoGamesProject
     {
         public static void FillListControl(ListControl control, string displayMember, string valueMember, DataTable dt, bool insertBlank = false, string defaultText = "")
         {
-            if (!insertBlank)
+            if (insertBlank)
             {
                 DataRow row = dt.NewRow();
                 row[valueMember] = DBNull.Value;
