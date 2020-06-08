@@ -16,7 +16,7 @@ namespace VideoGamesProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mdiForm());
+            Application.Run(new Login());
         }
     }
 }
