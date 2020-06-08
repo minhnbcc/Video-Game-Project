@@ -92,7 +92,7 @@ VALUES
 (6,'Cyberpunk 2077','the next big RPG from Witcher 3 developer CD Projekt RED, a sprawling sci-fi story about hackers, seedy criminals, and warring corporations. Originally, Cyberpunk was supposed to have released by now, but CD Projekt delayed it back in January','CD Projekt',2020 ,79.99 ,'17+'),
 (7,'Call of Duty: Modern Warfare','it has been reworked for gameplay to be more tactical and introduces new features, such as a Realism mode that removes the HUD as well as a form of the Ground War mode that now supports 64 players.','Activision', 2019,59.99 ,'17+'),
 (2,'Grand Theft Auto: San Andreas','Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.','Rockstar Games', 2004, 16.94,'18+'),
-(2,'Luigi''s Mansion 3','an action-adventure game, in which players control the character of Luigi from a fixed third-person perspective, as they capture ghosts across a large hotel setting.','Nintendo', 2019,79.96 ,'all ages')
+(2,'Luigi''s Mansion 3','an action-adventure game, in which players control the character of Luigi from a fixed third-person perspective, as they capture ghosts across a large hotel setting.','Nintendo', 2019,79.96 ,'all ages'),
 
 
 
