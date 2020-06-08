@@ -63,8 +63,8 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.prgBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.prgBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.label5 = new System.Windows.Forms.Label();
@@ -93,6 +93,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(253, 26);
             this.txtName.TabIndex = 2;
+            this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.txtName_Validating);
             // 
             // txtDesc
             // 
@@ -103,6 +104,7 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(345, 203);
             this.txtDesc.TabIndex = 12;
+            this.txtDesc.Validating += new System.ComponentModel.CancelEventHandler(this.txtDesc_Validating);
             // 
             // label3
             // 
@@ -404,6 +406,7 @@
             this.cmbGenre.Size = new System.Drawing.Size(253, 28);
             this.cmbGenre.TabIndex = 3;
             this.cmbGenre.Tag = "Genre";
+            this.cmbGenre.Validating += new System.ComponentModel.CancelEventHandler(this.cmbGenre_Validating);
             // 
             // btnDelete
             // 
@@ -437,6 +440,7 @@
             this.txtManufacturer.Name = "txtManufacturer";
             this.txtManufacturer.Size = new System.Drawing.Size(253, 77);
             this.txtManufacturer.TabIndex = 4;
+            this.txtManufacturer.Validating += new System.ComponentModel.CancelEventHandler(this.txtManufacturer_Validating);
             // 
             // label8
             // 
@@ -457,6 +461,7 @@
             this.txtPulishedYear.Name = "txtPulishedYear";
             this.txtPulishedYear.Size = new System.Drawing.Size(253, 26);
             this.txtPulishedYear.TabIndex = 5;
+            this.txtPulishedYear.Validating += new System.ComponentModel.CancelEventHandler(this.txtPulishedYear_Validating);
             // 
             // label7
             // 
@@ -477,6 +482,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(253, 26);
             this.txtPrice.TabIndex = 6;
+            this.txtPrice.Validating += new System.ComponentModel.CancelEventHandler(this.txtPrice_Validating);
             // 
             // statusStrip1
             // 
@@ -497,15 +503,15 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 20);
             // 
-            // prgBar
-            // 
-            this.prgBar.Name = "prgBar";
-            this.prgBar.Size = new System.Drawing.Size(100, 18);
-            // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 20);
+            // 
+            // prgBar
+            // 
+            this.prgBar.Name = "prgBar";
+            this.prgBar.Size = new System.Drawing.Size(100, 18);
             // 
             // toolStripStatusLabel3
             // 
@@ -534,7 +540,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::VideoGamesProject.Properties.Resources.game_bg;
             this.ClientSize = new System.Drawing.Size(1247, 724);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label5);

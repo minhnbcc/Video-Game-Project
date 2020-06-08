@@ -39,9 +39,9 @@ namespace VideoGamesProject
                     case "Games":
                         childForm = new frmGamesMaintenance();
                         break;
-                    //case "ModifyOrders":
-                    //    childForm = new frmModifyOrders();
-                    //    break;
+                    case "About":
+                        childForm = new frmAbout();
+                        break;
 
                 }
 
@@ -64,6 +64,51 @@ namespace VideoGamesProject
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
             }
           
+        }
+
+        private void ShowToolStripButtonForm_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form childForm = null;
+                ToolStripButton tb = (ToolStripButton)sender;
+
+
+                switch (tb.Tag)
+                {
+                    case "Orders":
+                        childForm = new frmOrders();
+                        break;
+                    case "GameOrders":
+                        childForm = new frmModifyOrders();
+                        break;
+                    case "Games":
+                        childForm = new frmGamesMaintenance();
+                        break;
+                    case "About":
+                        childForm = new frmAbout();
+                        break;
+
+                }
+
+                if (childForm != null)
+                {
+                    foreach (Form f in this.MdiChildren)
+                    {
+                        if (f.GetType() == childForm.GetType())
+                        {
+                            f.Activate();
+                            return;
+                        }
+                    }
+                }
+                childForm.MdiParent = this;
+                childForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ex.GetType().ToString());
+            }
         }
 
         private void OpenFile(object sender, EventArgs e)
@@ -148,10 +193,8 @@ namespace VideoGamesProject
             System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
 
-        private void newToolStripButton_Click(object sender, EventArgs e)
-        {
-            frmOrders newOrder = new frmOrders();
-            newOrder.Show();
-        }
+        
+
+       
     }
 }

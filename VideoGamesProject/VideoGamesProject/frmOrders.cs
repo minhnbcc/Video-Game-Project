@@ -387,7 +387,7 @@ namespace VideoGamesProject
         #endregion
 
 
-       #region HINT TEXT
+        #region HINT TEXT
         private void txtGameName_Enter(object sender, EventArgs e)
         {
             if (txtGameName.Text == "Search by Name")
@@ -415,7 +415,6 @@ namespace VideoGamesProject
         {
             txtCustomerAge.Text = "";
             cmbGenre.SelectedIndex = 0;
-            lstShow.Items.Clear();
             txtQty.Text = "";
             txtCustomerAge.Text = "";
             chkLegalAge.Checked = false;

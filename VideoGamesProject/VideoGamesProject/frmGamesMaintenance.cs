@@ -292,8 +292,9 @@ namespace VideoGamesProject
 
             LoadCategory();
 
-
+            rdo10.Checked = true;
             btnSave.Text = "Create";
+            btnAdd.Text = "";
             btnAdd.Enabled = false;
             btnDelete.Enabled = false;
 
@@ -530,5 +531,100 @@ namespace VideoGamesProject
         }
 
         #endregion
+
+        private void txtDesc_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtDesc.Text == string.Empty || int.TryParse(txtDesc.Text, out int des))
+            {
+                errProvider.SetError(txtDesc, "Description cannot be empty or a number");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(txtDesc, "");
+                e.Cancel = false;
+            }
+        }
+
+        private void txtName_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtName.Text == string.Empty || int.TryParse(txtName.Text, out int name))
+            {
+                errProvider.SetError(txtName, "Game name cannot be empty or a number");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(txtName, "");
+                e.Cancel = false;
+            }
+        }
+
+        private void cmbGenre_Validating(object sender, CancelEventArgs e)
+        {
+            if (Convert.ToInt32(cmbGenre.SelectedValue) != 0 )
+            {
+                errProvider.SetError(cmbGenre, "Please choose category");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(cmbGenre, "");
+                e.Cancel = false;
+            }
+        }
+
+        private void txtManufacturer_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtManufacturer.Text == string.Empty || int.TryParse(txtManufacturer.Text, out int manu))
+            {
+                errProvider.SetError(txtManufacturer, "Manufacturer cannot be empty or a number");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(txtManufacturer, "");
+                e.Cancel = false;
+            }
+        }
+
+        private void txtPulishedYear_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtPulishedYear.Text == string.Empty || !int.TryParse(txtPulishedYear.Text, out int manu))
+            {
+                errProvider.SetError(txtPulishedYear, "Published year cannot be empty and must be a number");
+                e.Cancel = true;
+            }
+            else if(txtPulishedYear.Text.Length != 4)
+            {
+                errProvider.SetError(txtPulishedYear, "Published year must have 4 numbers");
+                e.Cancel = true;
+            }
+            else if(Convert.ToInt32(txtPulishedYear.Text) > DateTime.Now.Year)
+            {
+                errProvider.SetError(txtPulishedYear, "Published year cannot be greater than current year");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(txtPulishedYear, "");
+                e.Cancel = false;
+            }
+
+        }
+
+        private void txtPrice_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtPrice.Text == string.Empty || Decimal.TryParse(txtPrice.Text, out decimal price))
+            {
+                errProvider.SetError(txtPrice, "Price cannot be empty and must be numberic");
+                e.Cancel = true;
+            }
+            else
+            {
+                errProvider.SetError(txtPrice, "");
+                e.Cancel = false;
+            }
+        }
     }
 }

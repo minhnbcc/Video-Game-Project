@@ -447,6 +447,15 @@ namespace VideoGamesProject
             rdoSwitch.Checked = false;
             btnSwitch.Enabled = false;
             btnModify.Enabled = false;
+            rdoModify.Enabled = false;
+            rdoSwitch.Enabled = false;
+            txtSSubtotal.Text = string.Empty;
+            txtSTax.Text = string.Empty;
+            txtSTotal.Text = string.Empty;
+            txtMSubtotal.Text = string.Empty;
+            txtMTax.Text = string.Empty;
+            txtMTotal.Text = string.Empty;
+            cmbSwitch.SelectedIndex = 0;
         }
 
         #endregion

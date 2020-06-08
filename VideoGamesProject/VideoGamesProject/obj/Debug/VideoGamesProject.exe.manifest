@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoGamesProject.exe" size="3499424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoGamesProject.exe" size="4983712">
       <assemblyIdentity name="VideoGamesProject" version="1.0.0.0" publicKeyToken="6C8F6B6FC9D66F06" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kgs/lb8EjMi1TM2NUqM/yKs/0v5QqDk2FZdv46OcTLA=</dsig:DigestValue>
+        <dsig:DigestValue>zsp3RMiqfyAcJqSXdMiLgs6p+hVJYsfc1119Krh+/Zw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VDgCk1Bm/MlBo6d/eE3B83zQU+6kxP5F/B01iHeWShY=</dsig:DigestValue>
+        <dsig:DigestValue>uAUUmzUbwdUcgERRLJ6Pt7/DPrxgegkLe+wMZOUdcQY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
