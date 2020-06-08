@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VideoGamesProject
@@ -338,6 +333,8 @@ namespace VideoGamesProject
             btnSave.Text = "Save";
             btnAdd.Enabled = true;
             btnDelete.Enabled = true;
+            btnAdd.Text = "Add";
+            
 
             NavigationState(true);
             NextPreviousButtonManagement();
@@ -562,7 +559,7 @@ namespace VideoGamesProject
 
         private void cmbGenre_Validating(object sender, CancelEventArgs e)
         {
-            if (Convert.ToInt32(cmbGenre.SelectedValue) != 0 )
+            if (cmbGenre.SelectedIndex == -1 )
             {
                 errProvider.SetError(cmbGenre, "Please choose category");
                 e.Cancel = true;
