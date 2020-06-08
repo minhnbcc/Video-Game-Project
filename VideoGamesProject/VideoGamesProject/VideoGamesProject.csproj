@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Spring 2020\DBP\Assignment%28Dropbox%29\Project\VideoGamesProject\</PublishUrl>
+    <PublishUrl>D:\Spring 2020\DBP\Assignment%28Dropbox%29\Video-Games-Project\VideoGamesProject\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>

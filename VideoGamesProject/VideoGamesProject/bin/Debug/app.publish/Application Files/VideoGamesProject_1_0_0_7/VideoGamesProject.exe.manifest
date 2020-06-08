@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VideoGamesProject.exe" version="1.0.0.7" publicKeyToken="f5bb5e439cb19ae9" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VideoGamesProject" version="1.0.0.0" publicKeyToken="6C8F6B6FC9D66F06" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VideoGamesProject.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Exchange.WebServices.dll" size="1130264">
+      <assemblyIdentity name="Microsoft.Exchange.WebServices" version="15.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>D+gCW5puaQfQvkgQ+/vGHxruO6FOhVu/XDXw87i5E84=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Exchange.WebServices.Auth.dll" size="43824">
+      <assemblyIdentity name="Microsoft.Exchange.WebServices.Auth" version="15.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EMfR2Wp6XGwLxifeZJknsa5Mqi5Y3MieJLG3cWMHE5w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoGamesProject.exe" size="4983712">
+      <assemblyIdentity name="VideoGamesProject" version="1.0.0.0" publicKeyToken="6C8F6B6FC9D66F06" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yGJX1TK+LfF1sQcNaYhRMJkJzh6jLWEEc7i3IhDiTgw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi\VideoGamesProject.resources.dll" size="317952">
+      <assemblyIdentity name="VideoGamesProject.resources" version="1.0.0.0" publicKeyToken="6C8F6B6FC9D66F06" language="vi" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tjYwYRr4TycAccavtecvA5BNYYmWdMn9g5CB8sHp9Q8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Icon\check-icon.ico" size="107757">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eZgf7y8V19WtsrwzvyOV97ysrQRTeR6GZzuqTQSa9FU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icon\errorIcon.ico" size="111940">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>isNl4Zvee5P4szGr25vQlr4zJBuV6TiM24oUcRONRak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icon\Logo.ico" size="261950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1/psQla2jpKIQgQrevvEv5s2kK+dM27LzQMHJgdYYdI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Add-icon.png" size="35415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p2Ubs1pgvmWsSa/CMkQuDxTnShOfzeJW7urHtjAGEeU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\delete-icon.png" size="10358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ku10wdHXNRHEGTaIsSGTMGLPTDLtKZ+PORV9xyBmOEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\first-icon.png" size="20393">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DaYj1LALHLPLo6EtEAcI6bQ88qsNUiO/qFbmdJWttF0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\game-bg.jpg" size="210036">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b0Lst3ibuvmRTBhGEN5CdNny+XpTBWBBEbHqDcGlBXM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\graphic-games.jpg" size="540483">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TEZo9AEZ/MWGPR6W09h4DPIvi8xs2LYsl6hUw1ekUOY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\last-icon.png" size="11834">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vQ70IcOQomlWvju8DnGdaxZ41LdZzEonM6c7zUhe8XE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Login.PNG" size="5432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PiaYzYWhRxTBTf09/5g2KNpp7P+86XeycBW3fjZoTcc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Logo.PNG" size="45826">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RTg9b7CnvAdmifsoBZgFpOLZMyKM497xCZWuq3vkKPM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\next-icon.png" size="4156">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s90D4If1Kx47Khn5JuZ2Y/pVqBPmXfZkwEgWbUMOhQE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\previous-icon.png" size="4601">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i7oxcnXjcphRtwLlUvPf2aWMyTXLmH+9kJxdm74qO+0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\question-icon.png" size="63650">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZUUvJOrpSN/LOZKaeBW7k9RDeN2Lny+FzOkpQxtNiKg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\search-icon.jpg" size="57974">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M3PrRpCol2KUMS+YeSZQA95eTQUmaIcla0q++PHMoXQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\update-data.png" size="24865">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O8/taDgi6LaakT82IMg2ZiS2hOHzGQweLS3uoGA4fwY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\update-icon.png" size="4421">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XoFlKNlQDBtM7+h2ouIGSLqMuWRY1d54rWkSUnykOVQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VideoGamesProject.exe.config" size="445">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GAd3/TWaz4/CvaTjtoivAjZuX9CsIxFfDTu2tsdCgQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=MINH\minhh" issuerKeyHash="51b5e77fb4ec8d7de028fb72d79ea5a0ea4f4364" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2M7uDD8uZJ2gqSDPBixakDfQXTApXJz3ReN2mDMWaxA=</DigestValue></Reference></SignedInfo><SignatureValue>t2sQPYTWmSmaCTIl88Y7EAKImAA7116b6/vmmpT2zqBicgbwzvRgUCSad15QqQ8VxD5nAY3+KxtIBeRiQXgjzA9DUhDx8nbroiJtdfY4y+hI5C43E4rTuuCeeA+ktNNAgJKznsVQvpw/2PA1dFfYf2PHDIHA/FoYCJIw7kfC2Tg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yOIZPj3AUFyx3m7rQXVhKg1ts6dU2jNZefnKFjR0FOlw2cOBa/vJ7/cDYJKFEt8ju42KjBxnnV+bxBASuJu/SwwzB2XFkkvn62x6Ja2iyknuq7oADti0lDTic7aBZayfCdH/I/cwOMb2tIb2PZQira+vOOkLl2cd4IXNRuTtlak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="106b16339876e345f79c5c29305dd037905a2c06cf20a9a09d642e3f0ceeced8" Description="" Url=""><as:assemblyIdentity name="VideoGamesProject.exe" version="1.0.0.7" publicKeyToken="f5bb5e439cb19ae9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MINH\minhh</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RfyFyL149MDwTmLRk2QjbmnzGnfrf2bd1QSfBmhAj24=</DigestValue></Reference></SignedInfo><SignatureValue>rqsGfCHu1AuHy3HirMgNGE2xsBNURyUwL0exB1aKbyTUuc2O8KZix40eXd01mYR7i/cHe+eqqRyk0H+0tthkLbTcu8rEdwur5YYFjhfVA7dImE9uuymODZehwjmtHju9FMngKe78E8MTlgasTX6PkDepelgrdl7dFUtmR8/C3jY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yOIZPj3AUFyx3m7rQXVhKg1ts6dU2jNZefnKFjR0FOlw2cOBa/vJ7/cDYJKFEt8ju42KjBxnnV+bxBASuJu/SwwzB2XFkkvn62x6Ja2iyknuq7oADti0lDTic7aBZayfCdH/I/cwOMb2tIb2PZQira+vOOkLl2cd4IXNRuTtlak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQIy9k3TplsrlPgx6gtSBhETANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQATQBJAE4ASABcAG0AaQBuAGgAaDAeFw0yMDA2MDMwMjI1MzZaFw0yMTA2MDMwODI1MzZaMB8xHTAbBgNVBAMeFABNAEkATgBIAFwAbQBpAG4AaABoMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDI4hk+PcBQXLHebutBdWEqDW2zp1TaM1l5+coWNHQU6XDZw4Fr+8nv9wNgkoUS3yO7jYqMHGedX5vEEBK4m79LDDMHZcWSS+frbHolraLKSe6rugAO2LSUNOJztoFlrJ8J0f8j9zA4xva0hvY9lCKtr6846QuXZx3ghc1G5O2VqQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBADTcsi8/gStERAfRfKep54CJYSrA2XSEBhzlBQCTqb/7R2zoR226qK8Fh62BgDn9fVzmADpAu/TAgFOL5P9xfbFT2gJ9/lF4NhMxmYf/uD5BosZNybOeKKy4qU31XbwXj6z7/cgN8tUPmxIxe2k4CDQAHf5DC9jtTlw2GigGSvf/</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
